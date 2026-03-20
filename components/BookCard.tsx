@@ -18,17 +18,9 @@ export const BookCard = ({book}: Props) => {
             />
             
             <div className='p-2.5 align-middle'>
-                <h2 className='text-gray-700 text-[17px] pt-4 font-semibold font'>
-                    {book.title}
-                </h2>
-
-                <p className="text-[16px] text-g text-gray-600">
-                    {book.author}
-                </p>
-
-                <p className="text-[15px] mt-2 text-gray-700">
-                    {book.description}
-                </p>
+                <h2 className='text-gray-700 text-[17px] pt-4 font-semibold font'>{book.title}</h2>
+                <p className="text-[16px] text-g text-gray-600">{book.author}</p>
+                <p className="text-[15px] mt-2 text-gray-700">{book.description}</p>
 
                 <div className='text-black text-[13px] pt-1.5 flex flex-wrap gap-1.5'>
                     <button className='bg-orange-100 font-semibold text-orange-800 border border-amber-700 rounded-lg py-0.5 px-2 font-mono'>Rank: {book.rank}</button>
